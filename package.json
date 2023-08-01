@@ -6,16 +6,16 @@
     "type": "git",
     "url": "git@github.com:kmamal/doubly-linked-list.git"
   },
+  "license": "MIT",
   "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
   "scripts": {
-    "test": "./scripts/run-tests.sh",
+    "test": "npx @kmamal/testing",
     "update-exports": "node ./scripts/update-exports.mjs"
   },
-  "license": "MIT",
-  "dependencies": {
-    "@kmamal/util": "^0.1.11"
-  },
   "devDependencies": {
-    "@kmamal/testing": "^0.0.21"
+    "@kmamal/testing": "^0.0.24"
   }
 }
